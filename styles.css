@@ -1,0 +1,144 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #575757;
+    color: #ff0;
+}
+
+.hero {
+    background-image: url('https://img.freepik.com/free-vector/abstract-technological-background_23-2148897676.jpg?w=1060&t=st=1717958338~exp=1717958938~hmac=eca66179f14bad7561106367f2783d5d2ac7009cdb3f3d26303f68779e0e4026');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.btn {
+    background-color: #ff0;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: #333;
+    color: #ff0;
+}
+
+.content-section {
+    padding: 100px 20px;
+    margin-top: 50px;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+#about, #services, #portfolio, #contact {
+    background-color: #eaeaea;
+}
+
+#about img, #services img, #portfolio img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service, .portfolio-item {
+    max-width: 300px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+form button {
+    align-self: flex-start;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
